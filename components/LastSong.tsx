@@ -17,7 +17,7 @@ const containerRef = useRef<HTMLDivElement | null>(null);
           trigger: ".lastSong-wrapper",
           start: "top 10%", 
           toggleActions: "play none", 
-          markers: true,
+          //markers: true,
         },
       });
 
