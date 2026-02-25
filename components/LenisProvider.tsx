@@ -1,0 +1,21 @@
+"use client";
+import { ReactNode } from "react";
+import { ReactLenis } from "lenis/react";
+
+interface LenisProviderProps {
+  children: ReactNode;
+}
+
+export default function LenisProvider({ children }: LenisProviderProps) {
+  const options = {
+    lerp: 0.1,        
+    duration: 1.5,    
+    smoothWheel: true,
+  };
+
+  return (
+    <ReactLenis root options={options}>
+      {children}
+    </ReactLenis>
+  );
+}
